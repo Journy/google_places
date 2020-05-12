@@ -19,7 +19,7 @@ http_interactions:
       message: Found
     headers:
       Date:
-      - Tue, 18 Jun 2019 10:51:34 GMT
+      - Tue, 12 May 2020 22:49:16 GMT
       Pragma:
       - no-cache
       Expires:
@@ -39,14 +39,16 @@ http_interactions:
       X-Frame-Options:
       - SAMEORIGIN
       Server-Timing:
-      - gfet4t7; dur=20
+      - gfet4t7; dur=34
       Alt-Svc:
-      - quic=":443"; ma=2592000; v="46,44,43,39"
+      - h3-27=":443"; ma=2592000,h3-25=":443"; ma=2592000,h3-T050=":443"; ma=2592000,h3-Q050=":443";
+        ma=2592000,h3-Q049=":443"; ma=2592000,h3-Q048=":443"; ma=2592000,h3-Q046=":443";
+        ma=2592000,h3-Q043=":443"; ma=2592000,quic=":443"; ma=2592000; v="46,43"
     body:
       encoding: UTF-8
       string: "<HTML><HEAD><meta http-equiv=\"content-type\" content=\"text/html;charset=utf-8\">\n<TITLE>302
         Moved</TITLE></HEAD><BODY>\n<H1>302 Moved</H1>\nThe document has moved\n<A
         HREF=\"https://lh4.googleusercontent.com/-1wzlVdxiW14/USSFZnhNqxI/AAAAAAAABGw/YpdANqaoGh4/s1600-w400/Google%2BSydney\">here</A>.\r\n</BODY></HTML>\r\n"
     http_version: 
-  recorded_at: Tue, 18 Jun 2019 10:51:34 GMT
+  recorded_at: Tue, 12 May 2020 22:49:16 GMT
 recorded_with: VCR 2.9.3
