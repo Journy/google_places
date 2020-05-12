@@ -20,6 +20,6 @@ Gem::Specification.new do |s|
   s.add_dependency 'httparty',                '>= 0.13.1'
   s.add_development_dependency 'rspec',       '~> 3.0'
   s.add_development_dependency 'addressable', '~> 2.4.0'
-  s.add_development_dependency 'webmock',     '~> 1.18'
+  s.add_development_dependency 'webmock',     '>= 3.8.3'
   s.add_development_dependency 'vcr',         '~> 2.9'
 end

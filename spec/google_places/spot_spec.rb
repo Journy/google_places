@@ -128,7 +128,7 @@ describe GooglePlaces::Spot do
     it 'should include country in formatted address' do
       @collection = GooglePlaces::Spot.list_by_query('Statue of liberty, New York', api_key, region: 'ca')
       @collection.each do |spot|
-        expect(spot.formatted_address).to end_with('USA')
+        expect(spot.formatted_address).to end_with('United States')
       end
     end
 
@@ -147,7 +147,7 @@ describe GooglePlaces::Spot do
     it 'should be a Spot' do
       expect(@spot.class).to eq(GooglePlaces::Spot)
     end
-    %w(reference vicinity lat lng viewport name icon types id formatted_phone_number international_phone_number formatted_address address_components street_number street city region postal_code country rating url types website price_level opening_hours events utc_offset place_id permanently_closed).each do |attribute|
+    %w(reference vicinity lat lng viewport name icon types id formatted_phone_number international_phone_number formatted_address address_components street_number street city region postal_code country rating url types website price_level opening_hours events utc_offset place_id permanently_closed business_status).each do |attribute|
       it "should have the attribute: #{attribute}" do
         expect(@spot.respond_to?(attribute)).to eq(true)
       end
@@ -160,9 +160,11 @@ describe GooglePlaces::Spot do
         expect { @spot[attribute.to_sym] }.to_not raise_error
       end
     end
+
     it 'should contain 5 reviews' do
       @spot.reviews.size == 5
     end
+
     %w(rating type author_name author_url text time).each do |attribute|
       it "should have the review attribute: #{attribute}" do
         expect(@spot.reviews[0].respond_to?(attribute)).to eq(true)

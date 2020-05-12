@@ -11,7 +11,7 @@ GEM
     crack (0.4.3)
       safe_yaml (~> 1.0.0)
     diff-lcs (1.3)
-    hashdiff (0.3.7)
+    hashdiff (1.0.1)
     httparty (0.16.2)
       multi_xml (>= 0.5.2)
     multi_xml (0.6.0)
@@ -28,12 +28,12 @@ GEM
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.6.0)
     rspec-support (3.6.0)
-    safe_yaml (1.0.4)
+    safe_yaml (1.0.5)
     vcr (2.9.3)
-    webmock (1.24.6)
+    webmock (3.8.3)
       addressable (>= 2.3.6)
       crack (>= 0.3.2)
-      hashdiff
+      hashdiff (>= 0.4.0, < 2.0.0)
 
 PLATFORMS
   ruby
@@ -43,7 +43,7 @@ DEPENDENCIES
   google_places!
   rspec (~> 3.0)
   vcr (~> 2.9)
-  webmock (~> 1.18)
+  webmock (>= 3.8.3)
 
 BUNDLED WITH
    1.17.2
